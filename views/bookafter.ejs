@@ -37,20 +37,45 @@
 						<div class="booking-bg">
 							<div class="form-header">
 								<h2>Make your reservation</h2>
-								<p>Today's Weather</p>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam numquam at</p>
 							</div>
 						</div>
-						<form>
+						<form method="post" action="/save-booking">
 							<div class="row">
 								<div class="col-md-6">
-								
-					
+									<div class="form-group">
+										<span class="form-label">Name</span>
+										<input class="form-control" type="text" placeholder="enter your name here" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Contact</span>
+										<input class="form-control" type="number"  placeholder='enter your contact here'required>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
 								<div class="form-group">
-									<span class="form-label">Select Time</span>
-									<input class="form-control" type="date" required>
+									<span class="form-label">Tickets</span>
+									<input class="form-control" type="number" placeholder="enter tickets number" required>
 								</div>
-								</div>
-								
+
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Check In</span>
+											<input class="form-control" type="date" required>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<span class="form-label">Check Out</span>
+											<input class="form-control" type="date" required>
+										</div>
+									</div>
+
+							
 							
 								
 								
@@ -58,7 +83,7 @@
 						
 							
 							<div class="form-btn">
-								<a href="/gotobookingpage" button class="submit-btn">Check availability</button>></a>
+								<button class="submit-btn">Submit</button>
 							</div>
 						</form>
 					</div>
