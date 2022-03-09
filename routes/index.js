@@ -1,5 +1,8 @@
 var express = require('express');
+<<<<<<< HEAD
 // const booking = require('../model/booking');
+=======
+>>>>>>> 78b9cb7 (frontend connected to backend)
 const booking = require('../model/booking');
 var router = express.Router();
 var Booking = require('../model/booking');
@@ -14,6 +17,26 @@ router.get('/', function(req, res, next) {
 
 router.get("/gotobookingpage",function(req,res,next){  //it get the data from addtodo list
   res.render("bookafter");
+});
+
+router.get("/Save-data",function(req,res,next){  //it get the data from addtodo list
+  res.render("bookafter");
+});
+router.post("/save-booking",function(req,res,next){   //it save the data from the form
+  // console.log(req.body);  
+  const booking=new Booking({
+    name:req.body.name,
+    contact : req.body.contact, 
+    ticketNo:req.body.ticketNo,
+    checkIn:req.body.checkIn,
+    checkOut:req.body.checkOut
+  });
+
+  const promise = booking.save();
+  promise.then((booking)=>{
+    console.log("your booking is",booking);
+    res.redirect('/gotobookingpage');
+  })
 });
 
 router.get("/Save-data",function(req,res,next){  //it get the data from addtodo list
