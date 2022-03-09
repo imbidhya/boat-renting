@@ -29,15 +29,49 @@
 </head>
 
 <body>
-	<div id="booking" class="section">
+	
+	<div id="booking" class="section" >
+		<div class="background">
+			<img src="\img\lake.jpg"></img>
+		</div>
+		
 		<div class="section-center">
 			<div class="container">
 				<div class="row">
 					<div class="booking-form">
 						<div class="booking-bg">
 							<div class="form-header">
-								<h2>Make your reservation</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate laboriosam numquam at</p>
+								<h2>Packages</h2>
+								<table class="table table-bordered table-dark">
+									<thead>
+									  <tr>
+										
+										<th scope="col">Hour</th>
+										
+										<th scope="col">Prices</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										
+										<td>1 Hour</td>
+										
+										<td>600</td>
+									  </tr>
+									  <tr>
+										
+										<td>Half Day</td>
+										
+										<td>1500</td>
+									  </tr>
+									  <tr>
+										
+										
+										<td>Whole day</td>
+										<td>2500</td>
+									  </tr>
+									</tbody>
+								  </table>
 							</div>
 						</div>
 						<form method="post" action="/save-booking">
@@ -48,12 +82,16 @@
 										<input class="form-control" type="text" name="name" placeholder="enter your name here" required>
 									</div>
 								</div>
+								
+							</div>
+							<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
 										<span class="form-label">Contact</span>
 										<input class="form-control" type="number" name="contact" placeholder='enter your contact here'required>
 									</div>
 								</div>
+								
 							</div>
 							<div class="col-md-6">
 								<div class="form-group">
@@ -69,11 +107,20 @@
 										</div>
 
 									</div>
+								</div>
+								
+								
+							</div>
+								<!-- <div class="row">
 									<div class="col-md-6">
 										<div class="form-group">
 											<span class="form-label">Check Out</span>
 											<input class="form-control" name="checkOut" type="date" required>
 										</div>
+									</div> -->
+									
+									<div >
+										<button class="submit-btn">Submit</button>
 									</div>
 							<div class="form-btn">
 							<button type="submit" class="submit-btn">Submit</button>
