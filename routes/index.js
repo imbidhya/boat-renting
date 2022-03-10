@@ -1,8 +1,5 @@
 var express = require('express');
-<<<<<<< HEAD
 // const booking = require('../model/booking');
-=======
->>>>>>> 78b9cb7 (frontend connected to backend)
 const booking = require('../model/booking');
 var router = express.Router();
 var Booking = require('../model/booking');
