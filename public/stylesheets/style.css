@@ -1,7 +1,6 @@
 .section {
 	position: relative;
 	height: 100vh;
-	background:
 }
 
 .section .section-center {
@@ -40,12 +39,15 @@
 	/* background-image: url('../img/barahi.jpg'); */
 	background-size: cover;
 	background-position: center;
-	margin-top: 20px;
+	
 	padding: 25px;
 	border-radius: 6px;
 	-webkit-box-shadow: 0px 5px 10px -5px rgba(221, 176, 199, 0.8);
 	box-shadow: 0px 5px 10px -5px rgba(221, 176, 199, 0.8);
 	overflow: hidden;
+	color: white;
+
+	;
 }
 
 .booking-form .booking-bg::before {
@@ -55,6 +57,7 @@
 	right: 0;
 	bottom: 0;
 	top: 0;
+	
 	width: auto;
 	height:800px;
 	background: #313555;
@@ -82,6 +85,16 @@
 	text-transform: capitalize;
 }
 
+.booking-form .form-header h3 {
+	font-family: 'Playfair Display', serif;
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-weight: 900;
+	color: #fff;
+	font-size: 30px;
+	text-transform: capitalize;
+}
+
 .booking-form .form-header p {
 	color: #fff;
 	font-size: 18px;
@@ -89,7 +102,7 @@
 
 .booking-form .form-group {
 	position: relative;
-	margin-top: 90px;
+	
 }
 
 .booking-form .form-control {
@@ -162,7 +175,7 @@
 }
 
 .booking-form .form-label {
-	color: #856849;
+	color: dark brown;
 	text-transform: uppercase;
 	line-height: 24px;
 	height: 24px;
@@ -177,7 +190,8 @@
 
 .booking-form .submit-btn {
 	display: block;
-	width: 100%;
+	width: 50%;
+	text-align: center;
 	color: #fff;
 	background-color:#e77d92;
 	
@@ -196,6 +210,11 @@
 	background-color: #77282a;
 }
 
+.circle-bg{
+	background: #eebdbe;
+    border-radius: 50%;
+}
+
 @media only screen and (max-width: 768px) {
 	.booking-form .booking-bg {
 		position: relative;
@@ -211,3 +230,4 @@
 	}
 
 }
+

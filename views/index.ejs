@@ -33,6 +33,7 @@
 		<div class="background">
 			<img src="\img\lake.jpg"></img>
 		</div>
+		
 		<div class="section-center">
 			<div class="container">
 				<div class="row">
@@ -42,26 +43,36 @@
 						<div class="booking-bg">
 							<div class="form-header">
 								<h2>
-									Weather Today at Lakeside is 
-									<div><img src="https://openweathermap.org/img/wn/<%= weatherData.current.weather[0].icon %>@2x.png" alt='' /></div>
-									<span><%= weatherData.current.weather[0].description %></span>
+									DIGITAL DUNGA
 								</h2>
-								<div>
-									<span>Temperature:</span>
-									<span><%= weatherData.current.temp %>°C</span>
+								<h3>
+									Weather Today at Lakeside is 
+								</h3>
+									<div><img class="circle-bg" src="https://openweathermap.org/img/wn/<%= weatherData.current.weather[0].icon %>@2x.png" alt='' /></div>
+									<h3 class="datashow"><%= weatherData.current.weather[0].description %></h3>
+								
+								<div class="showdata">
+									<div>
+										<span>Temperature:</span>
+										<span><%= weatherData.current.temp %>°C</span>
+									</div>
+									<div>
+										<span>Humidity:</span>
+										<span><%= weatherData.current.humidity %></span>
+									</div>
+
+									<div>
+										<span>Wind Speed:</span>
+										<span><%= weatherData.current.wind_speed %></span>
+									</div>
+									<div>
+										<span>Wind Degree:</span>
+										<span><%= weatherData.current.wind_deg %></span>
+									</div>
+
 								</div>
-								<div>
-									<span>Humidity:</span>
-									<span><%= weatherData.current.humidity %></span>
-								</div>
-								<div>
-									<span>Wind Speed:</span>
-									<span><%= weatherData.current.wind_speed %></span>
-								</div>
-								<div>
-									<span>Wind Degree:</span>
-									<span><%= weatherData.current.wind_deg %></span>
-								</div>
+								
+								
 							</div>
 						</div>
 						<form>
@@ -70,8 +81,8 @@
 								
 					
 								<div class="form-group">
-									<span class="form-label" >Select Date</span>
-									<input class="form-control" type="date" required >
+									<span class="form-label">Select Date</span>
+									<input class="form-control" type="date" required>
 								</div>
 								</div>
 								
@@ -82,7 +93,7 @@
 						
 							
 							<div class="form-btn">
-								<a href="/gotobookingpage" button class="submit-btn">Check availability</button>></a>
+								<a href="/gotobookingpage" button class="submit-btn" >Check availability</button>></a>
 							</div>
 						</form>
 					</div>
