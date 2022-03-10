@@ -78,20 +78,22 @@
 						<form action="gotobookingpage">
 							<div class="center-align">
 								<div class="row form-right-header">
-									Want to Book a Boat? 
+									Here are booking details 
 								</div>
 								<div class="row">
 									<div class="col-md-6">
-									
-						
-									<div class="form-group">
-										<span class="form-label">Select Date</span>
-										<input class="form-control" type="date" required>
-									</div>
-									</div>							
-								<div class="form-btn">
-									<button type="submit" class="submit-btn form-margin" >Check availability</button>
-								</div>
+										<div>
+											<div>Name</div>
+											<div><%= bookingDetails.name %></div>
+										</div>
+										<div>Contact</div>
+										<div><%= bookingDetails.contact %></div>
+										<div>Ticket Amount</div>
+										<div><%= bookingDetails.ticketNo %></div>
+										<div>Start Time</div>
+										<div><%= bookingDetails.checkIn %></div>
+										<div>End Time</div>
+										<div><%= bookingDetails.checkOut %></div>							
 							</div>
 						</form>
 					</div>

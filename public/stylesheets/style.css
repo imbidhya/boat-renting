@@ -1,3 +1,12 @@
+.container{
+	margin: 0 auto;
+}
+
+thead tr th{
+	text-align: center;
+	font-size: 17px;
+}
+
 .section {
 	position: relative;
 	height: 100vh;
@@ -109,6 +118,7 @@
 	background-color: #fff;
 	height: 45px;
 	padding: 0px 15px;
+	width: 400px;
 	color: #151515;
 	border: 1px solid #e5e5e5;
 	font-size: 16px;
@@ -185,7 +195,12 @@
 }
 
 .booking-form .form-btn {
-	margin-top: 150px;
+	margin-top: 20px;
+}
+
+.form-margin {
+	margin: 90px 0 0 10px;
+	
 }
 
 .booking-form .submit-btn {
@@ -199,7 +214,7 @@
 	font-size: 18px;
 	border: none;
 	border-radius: 40px;
-	line-height: 55px;
+	line-height: 40px;
 	text-align: center;
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
@@ -210,9 +225,32 @@
 	background-color: #77282a;
 }
 
+.form-right-header{
+	font-family: 'Playfair Display', serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: rgb(39, 25, 25);
+    font-size: 30px;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+
 .circle-bg{
 	background: #eebdbe;
     border-radius: 50%;
+}
+
+.center-align{
+	margin-top: 30%;
+}
+
+.center-align-right{
+	margin-top: 20%;
+}
+
+.center-align-left{
+	margin-top: 40% !important;
 }
 
 @media only screen and (max-width: 768px) {
