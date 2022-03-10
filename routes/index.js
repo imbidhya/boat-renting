@@ -41,14 +41,14 @@ router.post("/save-booking", function(req,res,next){   //it save the data from t
     name:req.body.name,
     contact : req.body.contact, 
     ticketNo:req.body.ticketNo,
-    checkIn:req.body.checkIn,
+    time:req.body.checkIn,
     checkOut:req.body.checkOut
   });
 
 
   const promise = booking.save();
   promise.then((booking)=>{
-    console.log("your booking is",booking,booking._id);
+    console.log("your booking is",booking);
     // res.render("display",{booking});
     // booking.push({...req.body,id: booking._id})
     res.redirect(`/bookingInfo/`+booking._id);

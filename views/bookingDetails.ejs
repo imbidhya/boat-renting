@@ -76,9 +76,12 @@
 							</div>
 						</div>
 						<form action="gotobookingpage">
-							<div class="center-align">
+							<div class="center-align-right">
 								<div class="row form-right-header">
-									Here are booking details 
+									Booking Succesful! 
+								</div>
+								<div class="row form-right-header ft-4">
+									Here are the booking details 
 								</div>
 								<div class="row">
 									<div class="col-md-6">
@@ -90,10 +93,8 @@
 										<div><%= bookingDetails.contact %></div>
 										<div>Ticket Amount</div>
 										<div><%= bookingDetails.ticketNo %></div>
-										<div>Start Time</div>
-										<div><%= bookingDetails.checkIn %></div>
-										<div>End Time</div>
-										<div><%= bookingDetails.checkOut %></div>							
+										<div>Booking Time</div>
+										<div><%= bookingDetails.time %></div>
 							</div>
 						</form>
 					</div>

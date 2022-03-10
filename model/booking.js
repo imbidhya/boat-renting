@@ -5,7 +5,7 @@ const BookingSchema = mongoose.Schema({
     name: String,
     contact: String,
     ticketNo:Number,
-    checkIn:Date,
+    time:String,
     checkOut:Date
 });
 
