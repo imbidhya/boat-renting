@@ -37,10 +37,31 @@
 			<div class="container">
 				<div class="row">
 					<div class="booking-form">
+						<!-- <h2>Digital Dunga</h2>
+						<p>Make your reservation</p> -->
 						<div class="booking-bg">
 							<div class="form-header">
-								<h2>Digital Dunga</h2>
-								<p>Make your reservation</p>
+								<h2>
+									Weather Today at Lakeside is 
+									<div><img src="https://openweathermap.org/img/wn/<%= weatherData.current.weather[0].icon %>@2x.png" alt='' /></div>
+									<span><%= weatherData.current.weather[0].description %></span>
+								</h2>
+								<div>
+									<span>Temperature:</span>
+									<span><%= weatherData.current.temp %>°C</span>
+								</div>
+								<div>
+									<span>Humidity:</span>
+									<span><%= weatherData.current.humidity %></span>
+								</div>
+								<div>
+									<span>Wind Speed:</span>
+									<span><%= weatherData.current.wind_speed %></span>
+								</div>
+								<div>
+									<span>Wind Degree:</span>
+									<span><%= weatherData.current.wind_deg %></span>
+								</div>
 							</div>
 						</div>
 						<form>

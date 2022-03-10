@@ -1,16 +1,14 @@
 var express = require('express');
-<<<<<<< HEAD
-// const booking = require('../model/booking');
-=======
->>>>>>> 78b9cb7 (frontend connected to backend)
 const booking = require('../model/booking');
 var router = express.Router();
-var Booking = require('../model/booking');
-
+const fetch = require('node-fetch')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  fetch('https://api.openweathermap.org/data/2.5/onecall?lat=28.2096&lon=83.9856&appid=780a4551ff3e6ac4892ab54ec1e701ec&units=metric')
+  .then(res => res.json())
+  .then(weatherData => res.render('index',{weatherData: weatherData}))
+  .catch(err => console.log(err));
 });
 
 
